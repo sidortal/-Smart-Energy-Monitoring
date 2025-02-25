@@ -1,5 +1,7 @@
 # Smart Energy Monitoring System 🔋💡
 
+![Demo](https://github.com/sidortal/OBB-Expansion/blob/main/FusionAi.gif)
+
 ## 📌 Project Overview  
 A real-time energy monitoring system using ESP32, INA219 sensor, and MQTT.  
 AI-based anomaly detection using TensorFlow Lite for embedded devices.  
