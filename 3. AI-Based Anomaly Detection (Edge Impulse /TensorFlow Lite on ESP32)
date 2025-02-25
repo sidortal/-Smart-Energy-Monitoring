@@ -1,0 +1,17 @@
+#include "model_data.h"  // Trained model header file
+#include <TensorFlowLite.h>
+#include <tensorflow/lite/micro/all_ops_resolver.h>
+
+const int input_size = 3;  // Voltage, Current, Power
+float input_data[input_size] = {12.0, 150.0, 1.8}; // Sample input
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("Running AI anomaly detection...");
+}
+
+void loop() {
+  float prediction = run_ai_model(input_data);
+  Serial.print("Anomaly Score: "); Serial.println(prediction);
+  delay(5000);
+}
